@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>お問い合わせフォーム </title>
+        <!-- CSSファイルを読み込む -->
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+
+        <header id="toppaeg">
+            <h2><a hlef="top.html">世界一甘いお店</a></h2>
+        </header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li id="nav_toppaeg"><a href="top.html">トップ</a></li>
+                    <li id="nav_what's new"><a href="what's new.html">新着情報</a></li>
+                    <li id="nav_recommendation"><a href="recommendation.html">おすすめのスイーツ</a></li>
+                    <li id="nav_inquiry"><a href="inquiry.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        
+            <div id="main">            
+                <form action="#" method="post"><!-- 送信先未設定 -->
+                    <table>
+                        <tr>
+                            <td>お名前</td>
+                            <td><input type="text" name="name" size="45"></td>
+                        </tr>
+                        <tr>
+                            <td>近くのお店</td>
+                                <td>
+                                    <select name="area">
+                                        <option>北海道・東北</option>
+                                        <option>関東</option>
+                                        <option>中部</option>
+                                        <option>関西</option>
+                                        <option>中国・四国</option>
+                                        <option>九州・沖縄</option>
+                                    </select>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>電話番号</td>
+                            <td><input type="text" name="phone" size="50"></td>
+                        </tr>
+                        <tr>
+                            <td>メールアドレス</td>
+                            <td><input type="text" name="email" size="50"></td>
+                        </tr>
+                        <tr>
+                            <td>お問い合わせ種類</td>
+                                <td>
+                                    <input type="radio" name="type" value="prduct">商品について
+                                    <input type="radio" name="type" value="recruit">従業員について
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>お問い合わせ内容</td>
+                                <td><textarea name="messagge" cols="45" rows="5" placeholder="詳細を入力してください"></textarea></td>
+                        </tr>
+                    </table>
+                    <br><!-- 送信ボタン　-->
+                        <input type="submit" value="送信">
+                </form>
+            </div>
+        </div>
+    </body>
+    <div id="footer">
+        <!-- 空欄 -->
+    </div>
+    
+
+</html>
